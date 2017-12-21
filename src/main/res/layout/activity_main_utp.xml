@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="5dp"
+    tools:context="com.lorenzo.unsheathethephone.UTPMainActivity">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="false"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/ad_view"
+    android:layout_marginBottom="3dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_text"
+        android:id="@+id/check_text"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_toLeftOf="@+id/checkbox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sound_choose_text"
+        android:layout_below="@+id/check_text"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp"
+        android:text="@string/choose_sounds"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sens_text"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:text="@string/sens"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/sound" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensibility"
+        android:layout_below="@+id/sens_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:checked="false"
+        android:layout_alignTop="@+id/check_text"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_hint"
+        android:id="@+id/sound"
+        android:layout_below="@+id/sound_choose_text"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rect"
+        android:textColor="@color/colorAccent"
+        android:clickable="true"
+        android:elevation="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_text"
+        android:text="@string/acc"
+        android:textSize="17dp"
+        android:layout_below="@+id/sensibility"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="30dp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/acc_text"
+            android:id="@+id/acc_radio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acc_norm"
+            android:id="@+id/accNorm" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acc_high"
+            android:id="@+id/accHigh"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+</ScrollView>
+
+    <com.google.android.gms.ads.AdView android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

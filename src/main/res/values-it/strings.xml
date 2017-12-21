@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sfodera Il Telefono</string>
+    <string name="acc">Imposta Precisione:</string>
+    <string name="acc_high">Alta</string>
+    <string name="acc_norm">Normale</string>
+    <string name="check_text">Attiva "Sfodera Il Telefono":</string>
+    <string name="choose_sounds">Scegli il suono che vuoi sentire:</string>
+    <string name="menu_info">Informazioni</string>
+    <string name="sens">Regola La Sensibilità:</string>
+    <string name="sound_dialog_title">Suoni disponibili:</string>
+    <string name="instructions">ISTRUZIONI:\nScegli il suono che vuoi sentire e poi attiva "Sfodera Il Telefono".\nSe si desidera è possibile regolare la sensibilità: con un valore alto verrà riprodotto il suono ad ogni movimento; con un valore più basso sarà necessario un movimento con una certa intensità.\nSe si desidera una maggiore precisione scegliere \"Alta\" invece di \"Normale\", così facendo sarà più preciso, potrebbe però incidere sulla batteria.</string>
+    <string name="sound_hint">Clicca per scegliere</string>
+    <string name="info">Attivando l\'applicazione, verrà avviato un servizio ogniqualvolta verrà bloccato lo schermo del telefono. Questo vi permetterà di sentire il suono reale di un spada sguainata ogni volta che estrarrete il telefono dalla tasca.\nSe non sentite nulla ricordatevi di controllare il volume dei media!</string>
+    <string name="warn">ATTENZIONE: Questo significa che avrete qualcosa sempre in esecuzione in background e ,anche se questa applicazione non è una gran \"mangiatrice di batteria\", vi consiglio di disattivarla quando non ne avrete più bisogno.</string>
+    <string-array name="sounds">
+        <item name="sound_1">Spada</item>
+        <item name="sound_2">Scoreggia</item>
+        <item name="sound_3">Spada Laser</item>
+        <item name="sound_4">Frusta</item>
+    </string-array>
+
+</resources>

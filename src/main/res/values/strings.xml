@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Unsheathe The Phone</string>
+    <string name="check_text">Activate "Unsheathe The Phone":</string>
+    <string name="instructions">INSTRUCTIONS:\nChoose the sound you want to hear and then activate Unsheathe The Phone.\nIf you want you can adjust sensibility: the higher the value, the more often you\'re gonna hear the sound; the lower the value, the faster you\'ll have to move your phone to hear it.\nIf you want more accuracy choose \"High\" instead of \"Normal\", it\'s gonna be more accurate but it\'s also gonna take more battery.</string>
+    <string name="info">By activating the application, a service will start as soon as your phone go in lock screen state. This will allow you to get real sound of an unsheathing sword every time you pick up your phone.\nIf you don\'t hear anything remember to check the media volume!</string>
+    <string name="warn">ATTENTION: This mean you\'re gonna have something always running in background and even if this App it\'s not such a \"battery eater\", I suggest you to disable it when you no longer need it.</string>
+    <string name="menu_info">Info</string>
+    <string name="choose_sounds">Choose the sound you want to hear:</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-7518908736641187/2045213150</string>
+    <string name="sound_hint">Click to choose</string>
+    <string name="sound_dialog_title">Sounds list:</string>
+    <string name="acc">Set Accuracy:</string>
+    <string name="acc_norm">Normal</string>
+    <string name="acc_high">High</string>
+    <string name="sens">Adjust Sensibility:</string>
+    <string-array name="sounds">
+        <item name="sound_1">Sword</item>
+        <item name="sound_2">Fart</item>
+        <item name="sound_3">Lightsaber</item>
+        <item name="sound_4">Whip</item>
+    </string-array>
+
+</resources>
