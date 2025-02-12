@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lorenzo.unsheathethephone">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -13,7 +13,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UTPMainActivity">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7518908736641187~6615013553"/>
+
+        <activity android:name=".UTPMainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,8 +41,7 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".InfoActivity"
-            android:parentActivityName=".UTPMainActivity"></activity>
+        <activity android:name=".InfoActivity" android:parentActivityName=".UTPMainActivity" />
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
