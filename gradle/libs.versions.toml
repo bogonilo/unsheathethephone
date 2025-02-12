@@ -8,6 +8,9 @@ espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 playServicesAds = "23.6.0"
+compose = "1.5.3"
+activityCompose = "1.7.2"
+accompanistAdaptive = "0.30.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -17,8 +20,12 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 play-services-ads-lite = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "playServicesAds" }
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+accompanist-adaptive = { group = "com.google.accompanist", name = "accompanist-adaptive", version.ref = "accompanistAdaptive" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-

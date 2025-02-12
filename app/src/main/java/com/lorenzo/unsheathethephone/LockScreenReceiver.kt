@@ -7,6 +7,8 @@ import androidx.legacy.content.WakefulBroadcastReceiver
 
 class LockScreenReceiver : WakefulBroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
+        Log.e("LockScreenReceiver", "$intent")
+
         var i = Intent(context, SensorManagerService::class.java)
 
         if (intent.getAction() == Intent.ACTION_SCREEN_OFF) {

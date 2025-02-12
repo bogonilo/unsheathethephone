@@ -63,7 +63,7 @@ class UTPMainActivity : AppCompatActivity() {
 
         // ADS
         val adRequest = AdRequest.Builder().build()
-        adView!!.loadAd(adRequest)
+        adView?.loadAd(adRequest)
         loadInterstitialAd()
 
         // SENSIBILITY
